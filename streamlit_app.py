@@ -47,7 +47,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 if streamlit.button('Get Fruit Load List'):
  
- my_cnx = snowflake.connector.connect(user='pc_river_user',password='Alexa@202881',account='ew01286.ap-south-1',application='snowflake')
+ my_cnx = snowflake.connector.connect(user='pc_rivery_user',password='Alexa@202881',account='ew01286.ap-south-1',application='snowflake')
  #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
  my_data_rows = get_fruit_load_list()
  my_cnx.close()
