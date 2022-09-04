@@ -34,6 +34,8 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 #streamlit.text(fruityvice_response.json() )
 
 
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+
 
 #take the json version of response  and normalize it
 # write your own comment -what does the next line do? 
